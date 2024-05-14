@@ -55,7 +55,7 @@ form_login.onsubmit = async (e) => {
         //redirect 
        /*  window.location.pathname = '/collection.html'; */
     } else {
-        errorNotification("Something wrong happened!",10);
+        errorNotification("Incorrect Password!",10);
         console.log(error);
     }
 

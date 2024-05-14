@@ -173,46 +173,46 @@
   <!--EDIT INFO  -->
 <script>
   
-  function edit(fieldId) {
-      var field = document.getElementById(fieldId);
-      var currentValue = field.innerText.trim();
+//   function edit(fieldId) {
+//       var field = document.getElementById(fieldId);
+//       var currentValue = field.innerText.trim();
 
-      var inputField = document.createElement('input');
-      inputField.setAttribute('type', 'text');
-      inputField.setAttribute('value', currentValue);
-      inputField.classList.add('input-edit'); 
+//       var inputField = document.createElement('input');
+//       inputField.setAttribute('type', 'text');
+//       inputField.setAttribute('value', currentValue);
+//       inputField.classList.add('input-edit'); 
 
-      // Replace span with input field
-      field.parentNode.replaceChild(inputField, field);
+//       // Replace span with input field
+//       field.parentNode.replaceChild(inputField, field);
 
-      // Focus on the input field
-      inputField.focus();
+//       // Focus on the input field
+//       inputField.focus();
 
-      // Function to save changes
-      function saveChanges() {
-          var newValue = inputField.value;
-          localStorage.setItem(fieldId, newValue); // Save the new value to localStorage
-      }
+//       // Function to save changes
+//       function saveChanges() {
+//           var newValue = inputField.value;
+//           localStorage.setItem(fieldId, newValue); // Save the new value to localStorage
+//       }
 
-      // Add event listener to save changes when pressing Enter key
-      inputField.addEventListener('keypress', function (e) {
-          if (e.key === 'Enter') {
-              saveChanges(); // Save changes
-              field.innerText = inputField.value;
-              document.getElementById('photoName').innerText = inputField.value; // Update name below the profile picture
-              inputField.parentNode.replaceChild(field, inputField);
-          }
-      });
+//       // Add event listener to save changes when pressing Enter key
+//       inputField.addEventListener('keypress', function (e) {
+//           if (e.key === 'Enter') {
+//               saveChanges(); // Save changes
+//               field.innerText = inputField.value;
+//               document.getElementById('photoName').innerText = inputField.value; // Update name below the profile picture
+//               inputField.parentNode.replaceChild(field, inputField);
+//           }
+//       });
 
-      // Add event listener to save changes when clicking outside the input field
-      inputField.addEventListener('blur', function () {
-          saveChanges(); // Save changes
-          field.innerText = inputField.value;
-          document.getElementById('photoName').innerText = inputField.value; // Update name below the profile picture
-          inputField.parentNode.replaceChild(field, inputField);
-      });
-  }
-</script>
+//       // Add event listener to save changes when clicking outside the input field
+//       inputField.addEventListener('blur', function () {
+//           saveChanges(); // Save changes
+//           field.innerText = inputField.value;
+//           document.getElementById('photoName').innerText = inputField.value; // Update name below the profile picture
+//           inputField.parentNode.replaceChild(field, inputField);
+//       });
+//   }
+// </script>
 
   
 

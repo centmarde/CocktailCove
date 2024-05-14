@@ -4,7 +4,7 @@ import {
 
   const userId = localStorage.getItem("user_id");
   const profileimage =
-  "https://hiyluoiecwditapzngvr.supabase.co/storage/v1/object/public/profile/";
+  "https://hiyluoiecwditapzngvr.supabase.co/storage/v1/object/public/profile/public/";
 
   console.log(userId);
   getDatas() ;
